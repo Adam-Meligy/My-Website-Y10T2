@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+
+body {
+    background-image: linear-gradient(rgba(19, 20, 28, 0.9), rgba(19, 20, 28, 0.9)), url(WebsiteBackgroundImage2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    font-family: Inter;
+}
+
+h1 {
+    font-family: Cinzel;
+    font-weight: normal;
+    font-size: 400%;
+    margin-bottom: 0;
+}
+
+.leftcolumn {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+}
+
+.rightcolumn {
+    display: inline-block;
+    margin: 8% 0 0 2%;
+    width: 65%;
+    vertical-align: top;
+}
+
+img {
+    background-color: rgb(19, 20, 28);
+    width: 100%;
+    Border: 2px solid rgb(54, 54, 54);
+    padding: 5px;
+}
+
+.characterSprite {
+    margin-bottom: 2%;
+}
+
+.Location {
+    width: 35%;
+}
+
+.hkrun {
+    width: 20%;
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    vertical-align: middle;
+}
+
+span {
+    font-weight: bold;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    background-color: rgb(18, 134, 132);
+    padding: 2%;
+    border-radius: 15px;
+    font-size: 17px;
+    line-height: 3;
+    margin: 0;
+}
+
+.BMB {
+    padding: 5% 5% 5% 0%;
+}
+
+a:hover {
+    background-color: rgb(9, 94, 99);
+    text-decoration: underline;
+}
+
+hr {
+    color: white;
+}
