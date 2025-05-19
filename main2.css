@@ -1,0 +1,137 @@
+/* imports a link. the links are to fonts, and these fonts can be used on the text in the website */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+
+/* everything inbetween the braces (curly brackets) will apply to all html elements inside the <body> tag */
+body {
+    /* sets a background image. also applies a gradient on top of the image. the first colour will start at the top, and it will transition to the second colour as it goes down. */
+    background-image: linear-gradient(rgba(19, 20, 28, 0.9), rgba(19, 20, 28, 0.9)), url(WebsiteBackgroundImage2.jpg);
+    /* positions the background in the centre of the webpage */
+    background-position: center;
+    /* stops the background image from repeating */
+    background-repeat: no-repeat;
+    /* makes the background image as large as possible to cover the entire area */
+    background-size: cover;
+    /* gives the background fixed attachment. this means, even if you scroll down, the background image wont move */
+    background-attachment: fixed;
+    /* sets the colour of all the text to white */
+    color: white;
+    /* sets the font of all the text to inter */
+    font-family: Inter;
+}
+
+/* following code will apply to all <h1> tags */
+h1 {
+    /* sets the font to cinzel */
+    font-family: Cinzel;
+    /* sets font weight to normal, removed default bold of <h1 elements> */
+    font-weight: normal;
+    /* sets the text size to 70 pixels */
+    font-size: 110px;
+    /* sets the bottom margin to 0 */
+    margin-bottom: 0;
+}
+
+/* following code will apply to all elements within or with the class "leftColumn" */
+.leftcolumn {
+    /* sets display to inline-block: you can edit margins, padding, width and height, but the elements don't exist on their own line */
+    display: inline-block;
+    /* aligns all text to centre */
+    text-align: center;
+    /* sets the width of the container/column to 30% of the window */
+    width: 30%;
+    /* the container will be vertically aligned to the top of the tallest element (the other column.) */
+    vertical-align: top;
+}
+
+/* following code will apply to all elements within or with the class "rightColumn" */
+.rightcolumn {
+    /* inline-block display means the element can be edited like block but flows like inline */
+    display: inline-block;
+    /* sets the top margin to 8%, left to 0, bottom to 0 and right to 2% */
+    margin: 8% 0 0 2%;
+    /* sets the width of the container to 65% of the website window */
+    width: 65%;
+}
+
+/* following code will apply to all <img> elements */
+img {
+    /* sets the background colour of the image */
+    background-color: rgb(19, 20, 28);
+    /* sets the image width to be 100% of its container */
+    width: 100%;
+    /* adds a border. the first value is the border thickness, the second the border type (solid means a line) and the third the border colour */
+    Border: 2px solid rgb(54, 54, 54);
+    /* adds 5px of padding on all sides */
+    padding: 5px;
+}
+
+/* following code will apply to all elements with the class "characterSprite */
+.characterSprite {
+    /* sets the bottom margin to 2% */
+    margin-bottom: 2%;
+}
+
+/* following code will apply to all elements with the class "Location" */
+.Location {
+    /* sets the width of the element to be 35% of its container */
+    width: 35%;
+}
+
+/* following code will apply to all elements with the class "hkrun" */
+.hkrun {
+    /* sets the width of the element to be 20% of its container */
+    width: 20%;
+    /* sets background to transparent - removes background */
+    background: transparent;
+    /* sets border to none, removes the border set earlier */
+    border: none;
+    /* sets all padding to 0 */
+    padding: 0;
+    /* sets all margins to 0 */
+    margin: 0;
+    /* the element will be vertically aligned to the middle/centre of its container */
+    vertical-align: middle;
+}
+
+/* following code will apply to all <a> elements */
+a {
+    /* sets the text colour to white */
+    color: white;
+    /* removes default underline of <a> elements */
+    text-decoration: none;
+    /* sets the background colour */
+    background-color: rgb(18, 134, 132);
+    /* sets padding on all sides to 2% */
+    padding: 2%;
+    /* sets border radius to 15px, rounding the corners */
+    border-radius: 15px;
+    /* sets the text-size to 17 pixels */
+    font-size: 17px;
+    /* sets the line height (height of the text lines - the space inbetween them). setting it to 3 means te line height will be the font size multiplied by 3 */
+    line-height: 3;
+    /* sets margins on all sides to 0 */
+    margin: 0;
+}
+
+/* the following code will apply to all <a> elements when the pointer is hovering over them  */
+a:hover {
+    /* sets the background colour */
+    background-color: rgb(9, 94, 99);
+    /* adds an underline to the text, restoring the default underline of the <a> elements */
+    text-decoration: underline;
+    /* bolds the text */
+    font-weight: bold;
+}
+
+/* following code will apply to all elements with the class "BMB" */
+.BMB {
+    /* sets top, left and bottom padding to 5% and right to 0 */
+    padding: 5% 5% 5% 0;
+}
+
+/* following code will apply to all <hr> elements */
+hr {
+    /* sets the colour of the lines to white */
+    color: white;
+}

@@ -1,0 +1,89 @@
+<!-- The <html> tag encompasses all the other html tags. all the website's code exists inside the <html> tags -->
+<html>
+
+<!-- anything in <head> doesn't appear on the website itself. here, data on different file relationships and what appears in the browser tab can be established -->
+
+<head>
+    <!-- links this html document to the CSS document specified in the href, and then states the relationship, in this case stylesheet. this allows the webpage to be changed and styled (as well as other things) in the CSS stylesheet -->
+    <link href="main2.css" rel="stylesheet">
+    <!-- States the webpages title. this will appear in the browser tab when viewing the webpage -->
+    <Title>Xero | Hollow Knight Dream Boss Index</Title>
+
+</head>
+
+<!-- this is where the main code of the website exists. the code in the body will determine what appears on the webpage itself -->
+
+<body>
+    <!-- div element groups code together, and the class allows to have multiple div elements that can be edited differently in the CSS stylesheet. the div element acts like a container for the code inside -->
+    <div class="leftcolumn">
+        <!-- the <h#> (# is a number) tag the heading of the page. since this is the first, main and biggest heading of the page, the tag is <h1> -->
+        <h1>XERO</h1>
+        <!-- adds an image. the src link is the image itself, alt is the alternate text that will appear if the image cannot be loaded, and class gives it a reference that can be used in the stylesheet to edit html tags with the same class -->
+        <img src="HJ_Xero.webp" alt="Xero" class="characterSprite">
+        <!-- the <br> tag specifies a line break. this tag just means that the line will end after this element, and any text after it will be on a new line-->
+        <!-- the <a> tag is for an anchor link.
+            the href specifies the link itself. this link could be a web link or a link to a webpage. when clicked, if it is a webpage, it will navigate to that webpage on the website. if it is a web link, it will redirect the user to that web link.
+            the target specifies where to open the link. by setting it to "_blank", the link will open in a new tab.
+            the text between the open and closing <a> tag is the placeholder text. this is the text that will appear on the website. the text can be clicked as a link, and will navigate the user to the link mentioned in the href -->
+        <a href="https://www.youtube.com/watch?v=k0uUXYwjLuM" target="_blank">Boss In Action</a> <br>
+        <!-- the class in the <a> element gives it a reference that can be used in the stylesheet to style it.
+            the image (gif) and text inbetween the opening and closing tags will be what the user clicks to navigate to the link -->
+        <a href="index.html" class="BMB"><img src="HollowKnight.gif" class="hkrun">Browse More Bosses</a>
+
+    </div>
+
+    <!-- <div> element groups sections of code together -->
+    <div class="rightcolumn">
+        <!-- second-largest heading, hence it is <h2> -->
+        <h2>Location:</h2>
+        <!-- the <hr> tag simply adds a horizontal line. this line can be edited in the stylesheet, changing its width, height, colour, etc. -->
+        <hr>
+        <!-- the <p> tag is for paragraphs. this is where the main text or most non-heading text is located  -->
+        <p>Xero can be found in the lower part of the Resting Grounds, to the left of the Dreamer Statues.</p>
+        <!-- adds an image. src is the image link, alt is text that will show up if image doesn't load -->
+        <img src="Location-Xero.webp" alt="Xero's Location" class="Location">
+        <!-- second-largest heading -->
+        <h2>Lore:</h2>
+        <!-- adds a horizontal line under the text -->
+        <hr>
+        <!-- the <p> tag is for paragraphs, where the main, non-header, text is. -->
+        <p>Xero was a strong and proud warrior of Hallownest who believed strength would allow him hope, freedom and
+            anything else he wanted. In his dreams, he would "cut that plague with his nails", most likely meaning he
+            was able to fight off the infection and the light when he was dreaming, however he was still infected. Xero
+            believed that he could fight against the infection with violence and his strength. Fueled by these ideas, he
+            turned his weapons against Hallownest and the Pale King, which ultimately ended in his execution. His body,
+            along with other traitors of the king, were placed in the Resting Grounds, their tombs a warning to anyone
+            who would want to betray the Pale King. When the Knight talks to Xero, he is still under the impression that
+            his actions were right and justifiable, and blamed his demise on cruel fate, and saying all those who hope
+            against the infection are doomed to the same fate as him. After being defeated, Xero realises what he did
+            wrong. He asks the knight not to call him a traitor, simply to call him a fool, and that wherever the Knight
+            goes, he will be watching. </p>
+        <!-- second-largest heading -->
+        <h2>Battle:</h2>
+        <!-- adds a horizontal line under the text -->
+        <hr>
+        <!-- the <strong> tag will bold any text between the opening and closing tags -->
+        <!-- the <p> tag is for paragraphs, where the main, non-header, text is. -->
+        <p><strong>Health:</strong></p>
+        <!-- the <br> tag creates a line break, following text starts on new line -->
+        <!-- the <p> tag is for paragraphs, where the main, non-header, text is. -->
+        <p>200 | 320 | 416 | 500 | 570 <br>
+            Scaling with Nail Upgrades 0 | 1 | 2 | 3 | 4 respectively.</p>
+        <!-- the <p> tag is for paragraphs, where the main, non-header, text is. -->
+        <!-- <strong> bolds text -->
+        <p><strong>Moves:</strong>
+
+            <!-- <ul> defines a unordered list. this means that each list item, <li>, will be market with bullet points by default -->
+        <ul>
+            <!-- each <li> is a list item. they are what is inside the list. each list item will start on its own line and begin with a bullet point or number, depending on the list tag and the stylesheet -->
+            <li>Nail Cast: Xero summons 2 magic nails at his left and right sides. While moving around the arena, he
+                will fling one of his nails towards the Knight, before drawing it back and then firing the other one.
+                This is Xero's one and only attack, but he uses it constantly. If the Knight comes into contact with the
+                nails at any time, they will take 1 mask of damage. Xero fires a nail every 1-2 seconds, but at half
+                health the nails increase from 2 to 4, and he fires them every 0.75 seconds.</li>
+        </ul>
+        </p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+/* imports a link. the links are to fonts, and these fonts can be used on the text in the website */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* everything inbetween the braces (curly brackets) will apply to all html elements inside the <body> tag */
+body {
+  /* this sets the background image of the website. the "url" is where the image link is inserted. by applying this to <body>, it means that that the entire webpage will have this background image */
+  background-image: url(WebsiteBackgroundImage2.jpg);
+  /* sets the colour of all the text to white */
+  color: white;
+  /* sets the size of the background image to have a width of 100% of the body (so 100% of the website window size) and a height of auto (meaning the height will be automatically calculated and expand or contract to fit the size of its container). */
+  background-size: 100% auto;
+  /* if the website window is cropped, since the image with is 100% and height is auto, the background image will be adjusted and there will be some empty space between the website window and browser window. this sets the background colour of that empty space to black*/
+  background-color: black;
+  /* positions the background image so it is in the centre of the window */
+  background-position: center;
+  /* if a background image is smaller than the window, then it will repeat (more and more of the image will be added) to fill that space. this makes it so that the background image doesn't repeat */
+  background-repeat: no-repeat;
+  /* sets the font of all the text in <body> to inter */
+  font-family: inter;
+}
+
+/* the following code in the braces will apply to all html elements with the class and/or within the element with the class "searchContainer" */
+.searchContainer {
+  /* sets the width of "searchContainer" (the searchbar) to 30% of the website window */
+  width: 30%;
+  /* sets the vertical margins to 0 and the horizontal margins to auto. by setting the margins this way, it places the element in the centre of the webpage. */
+  margin: 0 auto;
+}
+
+/* the following code in the braces will apply to all <input> elements within the tags (in this case <div>) with the class "searchContainer" */
+.searchContainer input {
+  /* sets the font size of the input text and placeholder text in <input> to 18 pixels */
+  font-size: 18px;
+  /* sets the width of the input to 100% of its container. since its container (<div>, .searchContainer) has a width of 30% of the webpage, this will also have a width of 30% of the webpage. */
+  width: 100%;
+  /* sets the  vertical padding to 4%, left to 0, bottom to 4% and right to 8%. */
+  padding: 4% 0 4% 40px;
+  /* sets the background colour of the input field (searchbar), and gives it an opacity to 85% */
+  background-color: rgba(35, 35, 50, 0.92);
+  /* gives the searchbar a background image. since the background image is so small, it doesn't have to be used as an actual background image. this was used to make the search icon on the searchbar. */
+  background-image: url(SearchIcon.png);
+  /* the background image will not repeat, there will be only 1 image */
+  background-repeat: no-repeat;
+  /* sets the position of the background image all the way to the left. this creates a search icon on the left side of the searchbar */
+  background-position: left;
+  /* sets the border radius of the input field to 15 pixels. this gives the searchbar rounded edges. */
+  border-radius: 15px;
+  /* sets the colour of the input text and placeholder text to white. this will look different on the placeholder text though, as it has a default opacity set by browsers that is less than 1 */
+  color: white;
+}
+
+/* the following code in the braces will apply to the 'placeholder=""' in <input>  */
+input::placeholder {
+  /* sets the colour of the placeholder text and gives it an opacity value of 90%. this overrides the default opacity value set by browsers.*/
+  color: rgba(228, 228, 228, 0.9);
+}
+
+/* the following code in the braces will apply to all <ul> elements within the tags (in this case <div>) with the class "searchContainer" */
+.searchContainer ul {
+  /* by setting the display to none, the list will be hidden and won't appear on the webpage */
+  display: none;
+  /* by setting list style to none, the bullet points of the <li> elements inside the <ul> element will be removed */
+  list-style: none;
+  /* sets the top padding to 3%, the right to 0, the bottom to 5% and the left to 0 */
+  padding: 3% 0 5% 0;
+  /* sets the margin of all sides to 0 */
+  margin: 0;
+  /* sets the background colour and gives it an opacity of 90% */
+  background-color: rgba(19, 20, 28, 0.9);
+  /* sets the border radius to 15px. this gives the search results box rounded edges. */
+  border-radius: 15px;
+}
+
+/* when elements within (inside) the .searchContainer are focused (they can be affected by the keyboard, e.g. typing in the input field), apply code in braces to <ul> in the container */
+.searchContainer:focus-within ul {
+  /* sets the display to block, the default display value for <ul>. this will show the list when the <div> is focused */
+  display: block;
+}
+
+/* the following code in the braces will apply to all <a> elements within the tags (in this case <div>) with the class "searchContainer" */
+.searchContainer a {
+  /* sets the display to block, meaning margins and padding apply to the links and each link starts on its own line */
+  display: block;
+  /* sets the colour of the link text */
+  color: rgb(18, 134, 132);
+  /* sets the vertical padding (top and bottom) to 1% and the horizontal padding (left and right) to 3%*/
+  padding: 1% 3%;
+  /* sets text decoration to none. this removes the default underline of <a> elements */
+  text-decoration: none;
+}
+
+/* the code in the braces will apply when the pointer hovers over <a> elements in .searchContainer */
+.searchContainer a:hover {
+  /* gives the <a> elements an underline */
+  text-decoration: underline;
+  /* bolds the <a> element's text */
+  font-weight: bold;
+}
+
+/* the code in the braces will apply to all <h1> elements */
+h1 {
+  /* aligns the text in the middle of the page */
+  text-align: center;
+  /* sets the font size to 80 pixels */
+  font-size: 80px;
+  /* sets font-weight to normal - removes default bold of <h1> elements */
+  font-weight: normal;
+  /* sets a text shadow, which appears around an element. the first 2 values are the position (0 0 means shadow is directly around the text), the second value is the thickness, and the 4th the colour. using multiple shadows stacks them, making the overall shadow darker. */
+  text-shadow: 0 0 15px black, 0 0 15px black, 0 0 15px black, 0 0 8px black;
+  /* sets the font to Cinzel */
+  font-family: Cinzel;
+  /* sets the top margin to -10 pixels. this moves it 10 pixels up */
+  margin-top: -10px;
+}
+
+/* the code in the braces will apply to elements with the class "Hollow_Knight_Logo' */
+.Hollow_Knight_Logo {
+  /* sets the display to block, meaning it exists on its own line and padding and margins can apply to it */
+  display: block;
+  /* sets margins to auto. this centers the image */
+  margin: auto;
+}
+
+/* the code in the braces will apply to elements with the class "Credits" */
+.Credits {
+  /* sets the font of the text to inter */
+  font-family: Inter;
+  /* sets position to absolute. this allows its position to be manipulated */
+  position: absolute;
+  /* sets the position of the text to the very left */
+  left: 0;
+  /* sets the position of the text to the very bottom */
+  bottom: 0;
+  /* sets the font size to 10px */
+  font-size: 10px;
+}
+
+/* the following will apply to elements with the class mentioned */
+.Team-Cherry-Logo {
+  /* sets the width of the image to 5% of the window size */
+  width: 5%;
+  /* sets the height to auto, will calculate based on width */
+  height: auto;
+  /* sets the display to block */
+  display: block;
+  /* absolute position allows the position to be manipulated */
+  position: absolute;
+  /* sets the image to the very bottom */
+  bottom: 0;
+  /* sets the image to the very right */
+  right: 0;
+}

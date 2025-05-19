@@ -1,0 +1,85 @@
+<!-- The <html> tag encompasses all the other html tags. all the website's code exists inside the <html> tags -->
+<html>
+
+<!-- anything in <head> doesn't appear on the website itself. here, data on different file relationships and what appears in the browser tab can be established -->
+
+<head>
+    <!-- links this html document to the CSS document specified in the href, and then states the relationship, in this case stylesheet. this allows the webpage to be changed and styled (as well as other things) in the CSS stylesheet -->
+    <link href="main2.css" rel="stylesheet">
+    <!-- States the webpages title. this will appear in the browser tab when viewing the webpage -->
+    <Title>Elder Hu | Hollow Knight Dream Boss Index</Title>
+</head>
+
+<!-- this is where the main code of the website exists. the code in the body will determine what appears on the webpage itself -->
+
+<body>
+    <!-- div element groups code together, and the class allows to have multiple div elements that can be edited differently in the CSS stylesheet. the div element acts like a container for the code inside -->
+    <div class="leftcolumn">
+        <!-- the <h#> (# is a number) tag the heading of the page. since this is the first, main and biggest heading of the page, the tag is <h1> -->
+        <h1>ELDER HU</h1>
+        <!-- adds an image. the src link is the image itself, alt is the alternate text that will appear if the image cannot be loaded, and class gives it a reference that can be used in the stylesheet to edit html tags with the same class -->
+        <img src="HJ_Elder_Hu.webp" alt="Elder Hu" class="characterSprite">
+        <!-- the <br> tag specifies a line break. this tag just means that the line will end after this element, and any text after it will be on a new line-->
+        <!-- the <a> tag is for an anchor link.
+            the href specifies the link itself. this link could be a web link or a link to a webpage. when clicked, if it is a webpage, it will navigate to that webpage on the website. if it is a web link, it will redirect the user to that web link.
+            the target specifies where to open the link. by setting it to "_blank", the link will open in a new tab.
+            the text between the open and closing <a> tag is the placeholder text. this is the text that will appear on the website. the text can be clicked as a link, and will navigate the user to the link mentioned in the href -->
+        <a href="https://www.youtube.com/watch?v=o-jJClf_M3M" target="_blank">Boss In Action</a> <br>
+        <!-- the class in the <a> element gives it a reference that can be used in the stylesheet to style it.
+            the image (gif) and text inbetween the opening and closing tags will be what the user clicks to navigate to the link -->
+        <a href="index.html" class="BMB"><img src="HollowKnight.gif" class="hkrun">Browse More Bosses</a>
+    </div>
+
+    <!-- <div> element groups sections of code together -->
+    <div class="rightcolumn">
+        <!-- second-largest heading, hence it is <h2> -->
+        <h2>Location:</h2>
+        <!-- the <hr> tag simply adds a horizontal line. this line can be edited in the stylesheet, changing its width, height, colour, etc. -->
+        <hr>
+        <!-- the <p> tag is for paragraphs. this is where the main text or most non-heading text is located -->
+        <p>Elder Hu can be found in the Fungal Wastes, close to the entrances to Mantis Village and The City Of Tears.
+        </p>
+        <!-- adds an image. src is the image link, alt is text that will show up if image doesn't load -->
+        <img src="Location-Elder_Hu.webp" alt="Elder Hu's Location" class="Location">
+        <!-- second-largest heading -->
+        <h2>Lore:</h2>
+        <!-- adds a horizontal line under the text -->
+        <hr>
+        <!-- the <p> tag is for paragraphs, where the main, non-header, text is. -->
+        <p>Elder Hu was from outside Hallownest who came to the kingdom to use his abilities as a traveling sage and
+            warrior to rid Hallownest of the infection. He went into the Fungal Wastes and made his way to Mantis
+            Village where he encountered the mantises and the Mantis Lords. He believed that they were infected and
+            attacked. However, they were much stronger and killed him. If the Knight talks to Elder Hu after defeating
+            him,
+            he realises that the mantises weren't infected and says that they were right to kill him.</p>
+        <!-- second-largest heading -->
+        <h2>Battle:</h2>
+        <!-- adds a horizontal line under the text -->
+        <hr>
+        <!-- the <strong> tag will bold any text between the opening and closing tags -->
+        <!-- the <p> tag is for paragraphs, where the main, non-header, text is. -->
+        <p><strong>Health:</strong></p>
+        <!-- the <br> tag creates a line break, following text starts on new line -->
+        <!-- the <p> tag is for paragraphs, where the main, non-header, text is. -->
+        <p>250 | 420 | 550 | 600 | 650 <br>
+            Scaling with Nail Upgrades 0 | 1 | 2 | 3 | 4 respectively.</p>
+        <!-- the <p> tag is for paragraphs, where the main, non-header, text is. -->
+        <!-- <strong> bolds text -->
+        <p><strong>Moves:</strong>
+
+            <!-- <ul> defines a unordered list. this means that each list item, <li>, will be market with bullet points by default -->
+        <ul>
+            <!-- each <li> is a list item. they are what is inside the list. each list item will start on its own line and begin with a bullet point or number, depending on the list tag and the stylesheet -->
+            <li>Ring Slam: Elder Hu will summon a row of rings in the air, being separated by a few random gaps. He will
+                then slam them downwards simultaneously, dealing 1 mask of damage. The gaps in the row are safe to stand
+                under.</li>
+            <li>Ring Curtain: Elder Hu summons 2 rings on the left and right side of the arena that slam down almost
+                immediately. Each time slams down, another pair appears, closer to the left/right until the rings meet
+                in the center of the arena, dealing 1 mask of damage.</li>
+            <li>Teleport: Elder Hu will teleport randomly around the arena</li>
+        </ul>
+        </p>
+    </div>
+</body>
+
+</html>
